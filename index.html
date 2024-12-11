@@ -5,83 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Vitoria</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Restaurante Vitoria</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#menu">Menú</a></li>
-                    <li><a href="#about">Sobre Nosotros</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Vitoria</div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Bienvenido a Restaurante Vitoria</h1>
+            <p>Sabores únicos, experiencia inigualable</p>
+            <a href="#menu" class="btn">Descubre el Menú</a>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <h2>Bienvenidos a Restaurante Vitoria</h2>
-        <p>Disfruta de una experiencia gastronómica única.</p>
-    </section>
-
-    <section id="menu">
-        <div class="container">
-            <h2>Menú</h2>
-            <div class="menu-category">
-                <h3>Entrantes</h3>
-                <ul>
-                    <li>Ensalada Vitoria - 10€</li>
-                    <li>Jamón Ibérico - 15€</li>
-                </ul>
+    <section id="menu" class="menu-section">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="menu1.jpg" alt="Plato 1">
+                <h3>Primer Plato</h3>
+                <p>Deliciosa entrada preparada con ingredientes frescos.</p>
             </div>
-            <div class="menu-category">
-                <h3>Platos Principales</h3>
-                <ul>
-                    <li>Solomillo a la parrilla - 20€</li>
-                    <li>Paella de mariscos - 18€</li>
-                </ul>
+            <div class="menu-item">
+                <img src="menu2.jpg" alt="Plato 2">
+                <h3>Segundo Plato</h3>
+                <p>Sabores únicos que deleitarán tu paladar.</p>
             </div>
-            <div class="menu-category">
-                <h3>Postres</h3>
-                <ul>
-                    <li>Tarta de queso - 6€</li>
-                    <li>Helado artesanal - 5€</li>
-                </ul>
+            <div class="menu-item">
+                <img src="menu3.jpg" alt="Plato 3">
+                <h3>Postre</h3>
+                <p>El final perfecto para tu comida.</p>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>Ubicados en el corazón de la ciudad, en Restaurante Vitoria combinamos tradición y modernidad para ofrecerte los mejores sabores.</p>
-        </div>
+    <section id="about" class="about-section">
+        <h2>Sobre Nosotros</h2>
+        <p>En Vitoria, nos enorgullecemos de ofrecer una experiencia culinaria única, combinando tradición y modernidad.</p>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>📍 Dirección: Calle Gourmet, 123, Ciudad</p>
-            <p>📞 Teléfono: +34 123 456 789</p>
-            <p>📧 Correo: contacto@vitoriarestaurante.com</p>
-            <div id="map">
-                <!-- Puedes incrustar un mapa de Google aquí -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12677.941123804748!2d-3.703790479691533!3d40.41677579328426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289c6c225f4b%3A0xdeadbeefcafebabe!2sMadrid!5e0!3m2!1sen!2ses!4v1638967998573!5m2!1sen!2ses"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Restaurante Vitoria. Todos los derechos reservados.</p>
+    <footer id="contact">
+        <h2>Contacto</h2>
+        <p>Dirección: Calle de los Sabores, 123, Ciudad</p>
+        <p>Teléfono: +34 123 456 789</p>
+        <a href="https://wa.me/34123456789" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+        </a>
     </footer>
 
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/34123456789" class="whatsapp-float" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
-    </a>
+    <script src="script.js"></script>
 </body>
 </html>
+
