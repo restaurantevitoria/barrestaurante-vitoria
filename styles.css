@@ -1,88 +1,151 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Encabezado */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Sección hero */
-.hero {
-    background: url('restaurant.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-/* Sección menú */
-#menu h2, #about h2, #contact h2 {
-    text-align: center;
-    margin-top: 20px;
     color: #333;
 }
 
-.menu-category ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-category li {
-    margin: 5px 0;
-}
-
-/* Pie de página */
-footer {
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: url('restaurant.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f4b400;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #f4b400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: bounceIn 1.5s;
+}
+
+.btn:hover {
+    background: #c59100;
+}
+
+/* Menú Section */
+.menu-section {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #f4b400;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-item img:hover {
+    transform: scale(1.1);
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0%, 100% { transform: scale(0.9); }
+    50% { transform: scale(1.1); }
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+footer a.whatsapp-btn {
+    display: inline-block;
     margin-top: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-/* Botón de WhatsApp */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
+footer a.whatsapp-btn:hover {
+    background: #1EBE57;
 }
 
-.whatsapp-float img {
-    width: 50px;
-    height: 50px;
-}
