@@ -1,37 +1,60 @@
-<section class="bubble-section">
-    <div class="bubble-container">
-        <!-- Burbuja 1: Conócenos -->
-        <div class="bubble" onclick="window.location.href='#conocenos'">
-            <p>Conócenos</p>
-        </div>
-        <!-- Burbuja 2: Galería de Platos -->
-        <div class="bubble" onclick="window.location.href='#galeria-platos'">
-            <p>Galería de Platos</p>
-        </div>
-        <!-- Burbuja 3: Instagram -->
-        <div class="bubble" onclick="window.location.href='#instagram'">
-            <p>Instagram</p>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Vitoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nombre del Restaurante en el Centro -->
+    <header class="main-header">
+        <h1>Restaurante Vitoria</h1>
+    </header>
 
-<!-- Secciones correspondientes -->
-<section id="conocenos">
-    <h2>Conócenos</h2>
-    <p>Contenido sobre la historia del restaurante, el equipo y los valores.</p>
-</section>
+    <!-- Sección de Burbujas -->
+    <section class="bubble-section">
+        <div class="bubble-container">
+            <!-- Burbuja 1: Conócenos -->
+            <div class="bubble" onclick="window.location.href='#conocenos'">
+                <p>Conócenos</p>
+            </div>
+            <!-- Burbuja 2: Galería de Platos -->
+            <div class="bubble" onclick="window.location.href='#galeria-platos'">
+                <p>Galería de Platos</p>
+            </div>
+            <!-- Burbuja 3: Instagram -->
+            <div class="bubble" onclick="window.location.href='#instagram'">
+                <p>Instagram</p>
+            </div>
+        </div>
+    </section>
 
-<section id="galeria-platos">
-    <h2>Galería de Platos</h2>
-    <div class="gallery">
-        <img src="plato1.jpg" alt="Plato 1">
-        <img src="plato2.jpg" alt="Plato 2">
-        <img src="plato3.jpg" alt="Plato 3">
-        <!-- Añade más imágenes según sea necesario -->
-    </div>
-</section>
+    <!-- Secciones vinculadas -->
+    <section id="conocenos">
+        <h2>Conócenos</h2>
+        <p>En Restaurante Vitoria, ofrecemos una experiencia culinaria única con los mejores ingredientes y una atención excepcional. Nuestro equipo trabaja cada día para brindarte lo mejor de la cocina tradicional y moderna.</p>
+    </section>
 
-<section id="instagram">
-    <h2>Instagram</h2>
-    <p>Síguenos en <a href="https://instagram.com/tu_cuenta" target="_blank">Instagram</a> para más fotos y actualizaciones.</p>
-</section>
+    <section id="galeria-platos">
+        <h2>Galería de Platos</h2>
+        <div class="gallery">
+            <img src="images/plato1.jpg" alt="Plato 1">
+            <img src="images/plato2.jpg" alt="Plato 2">
+            <img src="images/plato3.jpg" alt="Plato 3">
+            <img src="images/plato4.jpg" alt="Plato 4">
+        </div>
+    </section>
+
+    <section id="instagram">
+        <h2>Instagram</h2>
+        <p>Síguenos en <a href="https://instagram.com/tu_cuenta" target="_blank">Instagram</a> para más fotos y actualizaciones.</p>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/123456789" class="whatsapp-float" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+</body>
+</html>
