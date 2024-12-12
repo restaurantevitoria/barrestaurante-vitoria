@@ -1,72 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Vitoria</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/34123456789" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Encabezado con carrusel -->
-    <header class="hero">
-        <div class="carousel">
-            <img src="restaurant1.jpg" class="carousel-image active" alt="Imagen 1">
-            <img src="restaurant2.jpg" class="carousel-image" alt="Imagen 2">
-            <img src="restaurant3.jpg" class="carousel-image" alt="Imagen 3">
+<section class="bubble-section">
+    <div class="bubble-container">
+        <!-- Burbuja 1: Conócenos -->
+        <div class="bubble" onclick="window.location.href='#conocenos'">
+            <p>Conócenos</p>
         </div>
-        <div class="hero-content">
-            <h1 class="restaurant-name">Restaurante Vitoria</h1>
-            <p class="tagline">Sabores que conquistan el corazón</p>
-            <a href="#menu" class="btn">Explorar Menú</a>
+        <!-- Burbuja 2: Galería de Platos -->
+        <div class="bubble" onclick="window.location.href='#galeria-platos'">
+            <p>Galería de Platos</p>
         </div>
-    </header>
-
-    <!-- Menú -->
-    <section id="menu" class="menu-section">
-        <h2>Nuestro Menú</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="menu1.jpg" alt="Entradas">
-                <h3>Entradas</h3>
-                <p>Deliciosos entrantes con ingredientes frescos.</p>
-            </div>
-            <div class="menu-item">
-                <img src="menu2.jpg" alt="Platos principales">
-                <h3>Platos Principales</h3>
-                <p>Sabores tradicionales con un toque moderno.</p>
-            </div>
-            <div class="menu-item">
-                <img src="menu3.jpg" alt="Postres">
-                <h3>Postres</h3>
-                <p>Final perfecto para tu comida.</p>
-            </div>
+        <!-- Burbuja 3: Instagram -->
+        <div class="bubble" onclick="window.location.href='#instagram'">
+            <p>Instagram</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sobre Nosotros -->
-    <section id="about" class="about-section">
-        <h2>Sobre Nosotros</h2>
-        <p>En Restaurante Vitoria, nos enorgullece ofrecer una experiencia culinaria que combina tradición y modernidad.</p>
-        <div class="about-image">
-            <img src="about.jpg" alt="Sobre Nosotros">
-        </div>
-    </section>
+<!-- Secciones correspondientes -->
+<section id="conocenos">
+    <h2>Conócenos</h2>
+    <p>Contenido sobre la historia del restaurante, el equipo y los valores.</p>
+</section>
 
-    <!-- Contacto -->
-    <footer id="contact" class="contact-section">
-        <h2>Contacto</h2>
-        <p>Dirección: Calle Sabores, 123, Ciudad</p>
-        <p>Teléfono: +34 123 456 789</p>
-        <a href="mailto:contacto@restaurantevitoria.com" class="btn">Enviar Email</a>
-    </footer>
+<section id="galeria-platos">
+    <h2>Galería de Platos</h2>
+    <div class="gallery">
+        <img src="plato1.jpg" alt="Plato 1">
+        <img src="plato2.jpg" alt="Plato 2">
+        <img src="plato3.jpg" alt="Plato 3">
+        <!-- Añade más imágenes según sea necesario -->
+    </div>
+</section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<section id="instagram">
+    <h2>Instagram</h2>
+    <p>Síguenos en <a href="https://instagram.com/tu_cuenta" target="_blank">Instagram</a> para más fotos y actualizaciones.</p>
+</section>
