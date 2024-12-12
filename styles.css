@@ -140,5 +140,92 @@ body {
 
 .contact-section a:hover {
     text-decoration: underline;
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Sección de burbujas */
+.bubble-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.bubble-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Estilo de las burbujas */
+.bubble {
+    width: 150px;
+    height: 150px;
+    background-color: #f4b400;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de las secciones vinculadas */
+section {
+    padding: 50px 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #f4b400;
+    margin-bottom: 20px;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Instagram sección */
+#instagram a {
+    color: #f4b400;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#instagram a:hover {
+    text-decoration: underline;
+}
+
 }
 
